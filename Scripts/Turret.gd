@@ -14,7 +14,7 @@ func attack_enemy(enemy):
 	var direction = enemy.global_position - global_position
 	shoot(direction)
 
-func _process(delta):	
+func _process(delta):
 	last_attack_time += delta
 	
 	var closest_enemy = null

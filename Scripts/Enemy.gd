@@ -3,6 +3,9 @@ extends KinematicBody2D
 var max_health = 100
 var current_health = 100
 
+func scale_health_bar(health_percentage):
+	$Healthbar/Background/Bar.rect_scale.y = health_percentage
+
 func take_damage(damage):
 	current_health -= damage
 	update_health_bar()
@@ -14,4 +17,3 @@ func die():
 
 func update_health_bar():
 	var health_percentage = float(current_health) / float(max_health)
-	$Healthbar/Background/Bar.rect_scale.y = health_percentage

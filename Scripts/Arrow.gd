@@ -11,5 +11,5 @@ func _physics_process(delta):
 	if collision_info:
 		var enemy = collision_info.get_collider()
 		if enemy.is_in_group("enemies"):
-			enemy.take_damage(damage_amount)
+			#enemy.take_damage(damage_amount)
 			queue_free()

@@ -9,7 +9,7 @@ extents = Vector2( 15, 15.6667 )
 [node name="Turret" type="AnimatedSprite" groups=["towers"]]
 scale = Vector2( 3, 3 )
 frames = ExtResource( 2 )
-playing = true
+frame = 2
 script = ExtResource( 1 )
 
 [node name="Area" type="Area2D" parent="."]
